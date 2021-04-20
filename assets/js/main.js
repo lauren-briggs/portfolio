@@ -9,6 +9,16 @@ const echoImg = $('#echobeats-img');
 const weatherImg = $('#weather-img');
 const workdayImg = $('#workday-img');
 
+const echoInfo = $('.echo-info');
+const weatherInfo = $('.weather-info');
+const workdayInfo = $('.workday-info');
+
+const echoClose = $('.echo-close');
+const weatherClose = $('.weather-close');
+const workdayClose = $('.workday-close');
+
+
+console.log(echoClose);
 
 //contact pop up
 contactEl.mouseenter(function () {
@@ -19,30 +29,34 @@ infoEl.mouseleave(function () {
   infoEl.removeClass('showme');
 });
 
-//background img on hover echo
+//ECHO background img and info on hover
 echoLink.mouseenter(function () {
   echoImg.css('display', 'block');
+  echoInfo.css('display', 'block');
 })
-
-echoLink.mouseleave(function () {
+echoClose.click(function () {
+  echoInfo.css('display', 'none');
   echoImg.css('display', 'none');
 })
-//background img on hover weather
+
+//WEATHER background img on hover
 weatherLink.mouseenter(function () {
   weatherImg.css('display', 'block');
+  weatherInfo.css('display', 'block');
 })
 
-weatherLink.mouseleave(function () {
+weatherClose.click(function () {
+  weatherInfo.css('display', 'none');
   weatherImg.css('display', 'none');
 })
 
-//background img on hover day planner
+//WORK DAY background img on hover
 workdayLink.mouseenter(function () {
   workdayImg.css('display', 'block');
+  workdayInfo.css('display', 'block');
 })
 
-workdayLink.mouseleave(function () {
+workdayClose.click(function () {
+  workdayInfo.css('display', 'none');
   workdayImg.css('display', 'none');
 })
-
-console.log(echoLink);
