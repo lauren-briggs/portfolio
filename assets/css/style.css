@@ -3,7 +3,6 @@ body{
     margin: 0% auto;
 }
 
-
 @font-face {
     font-family: "Bagnard";
     src: url(../font/Bagnard.otf); 
@@ -14,43 +13,34 @@ body{
     src: url(../font/SuisseIntlMono-Regular-WebS.woff); 
   }
 
+/* main */
 main{
-    width:60vw;
+    width:100vw;
+    height: 90vh;
     margin: 0 auto;
-    padding-top: 13%;
     text-align: center;
-	cursor: pointer;
-}
-h1{
-    font-family: 'Bagnard';
-    font-size: 40pt;
-    font-weight: normal;
-    line-height: 45pt;
+    justify-content: center;
+    align-items: center;
+    display: flex;
 }
 
-ul{
-    width: 100%;
-    display: flex;
-    align-items: flex-start;
-    position: fixed;
-    padding: 0;
-    margin: 0 0 0 0;
-    bottom: 0%;
-    border-top: 1px solid #000;
-    border-bottom: 1px solid #000;
-    list-style: none;
-    overflow: hidden;
-    transition: .4s;
-    box-sizing: border-box;
+.main-container{
+    width: 60vw;
+}
+
+h1{
+    font-family: 'Bagnard';
+    font-size: 46pt;
+    font-weight: normal;
+    line-height: 54pt;
+}
+
+main a{
+    background-color: white;
 }
 
 li{
-
-    white-space: nowrap;
-    display: inline-block;
-    text-align: centre;
-    margin: 0;
-    font-size: 14pt;
+    list-style: none;
 }
 
 a:link{
@@ -66,6 +56,48 @@ a:visited{
     color: #000;
 }
 
+/* background imgs */
+img{
+    display: none;
+    position: fixed;
+    margin: 0px auto;
+    top: 0%;
+    z-index: -1;
+    transition: 0.5s ;
+}
+
+
+
+/* footer */
+.footer-list{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    position: fixed;
+    padding: 0;
+    margin: 0 0 0 0;
+    bottom: 0%;
+    background-color: white;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    list-style: none;
+    overflow: hidden;
+    transition: .4s;
+    /* box-sizing: border-box; */
+}
+
+footer li{
+    white-space: nowrap;
+    display: inline-block;
+    text-align: centre;
+    margin: 0;
+    font-size: 14pt;
+}
+
+footer li:hover{
+    text-decoration: underline;
+}
+
 .info{
     width: 330px;
     position: fixed;
@@ -74,7 +106,7 @@ a:visited{
     border: 1px solid #000;
     border-left: none;
     border-bottom: none;
-    padding-left: 1%;
+    padding: 1em;
     display: none;
 }
 
@@ -82,74 +114,58 @@ a:visited{
     display: block;
 }
 
+.info a,
 p{
     font-family: 'SuisseIntlMono-Regular-WebS';
-
 }
 
 #contact{
-    padding: 0% 1% 0% 1%;
+    padding: 0em 1em;
     border-right: 1px solid #000;
     background-color: white;
 	z-index: 99;
 	cursor: pointer;
 }
+
 #contact.showme{
     text-decoration: underline;
 }
 
-#contact.showme1{
-    animation-name: back;
-    animation-duration: 60s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
+#about{
+    width: 73%;
+    z-index: -2;
+    /* Starting position */  
+    -moz-transform:translateX(50%);
+    -webkit-transform:translateX(50%);    
+    transform:translateX(100%);
+    /* Apply animation to this element */  
+    -moz-animation: example1 25s linear infinite;
+    -webkit-animation: example1 25s linear infinite;
+    animation: example1 25s linear infinite;
 }
 
-
-
-
-
-
-
-
-
-
-#about{
-                    width: 73%;
-                    z-index: -2;
-                    /* Starting position */  
-                    -moz-transform:translateX(50%);
-                    -webkit-transform:translateX(50%);    
-                    transform:translateX(100%);
-                    /* Apply animation to this element */  
-                    -moz-animation: example1 15s linear infinite;
-                    -webkit-animation: example1 15s linear infinite;
-                    animation: example1 15s linear infinite;
-                }
-                /* Move it (define the animation) */
-                @-moz-keyframes example1 {
-                    0%   { -moz-transform: translateX(100%); 
-								transform: translate(100%)}
-                    100% { -moz-transform: translateX(-100%); 
-								transform: translate(100%)}
-                }
-                @-webkit-keyframes example1 {
-                    0%   { -webkit-transform: translateX(100%); 
-									transform: translate(100%)}
-                    100% { -webkit-transform: translateX(-100%); 
-									transform: translate(100%)}
-                }
-                @keyframes example1 {
-                    0%   { 
-                    -moz-transform: translateX(100%); /* Firefox bug fix */
-                    -webkit-transform: translateX(100%); /* Firefox bug fix */
-                    transform: translateX(100%);       
-                    }
-                    100% { 
-                    -moz-transform: translateX(-100%); /* Firefox bug fix */
-                    -webkit-transform: translateX(-100%); /* Firefox bug fix */
-                    transform: translateX(-100%); 
-                    }
+/* Define transform animation */
+@-moz-keyframes example1 {
+    0%   { -moz-transform: translateX(100%); 
+            transform: translate(100%)}
+    100% { -moz-transform: translateX(-100%); 
+            transform: translate(100%)}
+}
+@-webkit-keyframes example1 {
+    0%   { -webkit-transform: translateX(100%); 
+            transform: translate(100%)}
+    100% { -webkit-transform: translateX(-100%); 
+            transform: translate(100%)}
+}
+@keyframes example1 {
+    0%   { -moz-transform: translateX(100%); /* Firefox bug fix */
+            -webkit-transform: translateX(100%); /* Firefox bug fix */
+            transform: translateX(100%);       
+    }
+    100% { -moz-transform: translateX(-100%); /* Firefox bug fix */
+            -webkit-transform: translateX(-100%); /* Firefox bug fix */
+            transform: translateX(-100%); 
+    }
 }
 
 
