@@ -21,8 +21,6 @@ Updated portfolio page.
 
 ## Updated Portfolio
 
-💁 Need help updating your Portfolio? Check out the [Career Services milestone resources for online presence](https://mycareerspot.org/onlinepresence).
-
 Your updated portfolio should:
 
 1. Display your full name, email, and phone number
