@@ -12,13 +12,6 @@ Updated portfolio page.
 
 * Submit an updated LinkedIn profile
 
-## Instructions
-
-1. [Updated Portfolio](#updated-portfolio)
-2. [GitHub Profile](#updated-github-profile)
-3. [Updated Resume](#updated-resume)
-4. [Updated LinkedIn](#updated-linkedin)
-
 ## Updated Portfolio
 
 Your updated portfolio should:
@@ -43,7 +36,7 @@ Your updated portfolio should:
 
 ### ⭐ DEPLOYED SITE
 
-[Here](https://lauren-briggs.github.io/portfolio/).
+[Click here](https://lauren-briggs.github.io/portfolio/).
 
 ![Screenshot of deployed site](assets/images/portfolio.png)
 
