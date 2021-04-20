@@ -4,18 +4,22 @@ const infoEl = $('.info');
 const echoLink = $('#echobeats-link');
 const weatherLink = $('#weather-link');
 const workdayLink = $('#workday-link');
+const codequizLink = $('#codequiz-link');
 
 const echoImg = $('#echobeats-img');
 const weatherImg = $('#weather-img');
 const workdayImg = $('#workday-img');
+const codequizImg = $('#codequiz-img');
 
 const echoInfo = $('.echo-info');
 const weatherInfo = $('.weather-info');
 const workdayInfo = $('.workday-info');
+const codequizInfo = $('.codequiz-info');
 
 const echoClose = $('.echo-close');
 const weatherClose = $('.weather-close');
 const workdayClose = $('.workday-close');
+const codeQuizClose = $('.codequiz-close');
 
 
 console.log(echoClose);
@@ -59,4 +63,15 @@ workdayLink.mouseenter(function () {
 workdayClose.click(function () {
   workdayInfo.css('display', 'none');
   workdayImg.css('display', 'none');
+})
+
+//CODE QUIZ background img on hover
+codequizLink.mouseenter(function () {
+  codequizImg.css('display', 'block');
+  codequizInfo.css('display', 'block');
+})
+
+codequizClose.click(function () {
+  codequizuizInfo.css('display', 'none');
+  codequizImg.css('display', 'none');
 })
