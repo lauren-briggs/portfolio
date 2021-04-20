@@ -72,6 +72,6 @@ codequizLink.mouseenter(function () {
 })
 
 codequizClose.click(function () {
-  codequizuizInfo.css('display', 'none');
+  codequizInfo.css('display', 'none');
   codequizImg.css('display', 'none');
 })
