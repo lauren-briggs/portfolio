@@ -18,14 +18,15 @@ main{
     width:100vw;
     height: 90vh;
     margin: 0 auto;
-    text-align: center;
+    text-align: left;
     justify-content: center;
     align-items: center;
     display: flex;
+    z-index: 1;
 }
 
 .main-container{
-    width: 60vw;
+    width: 80vw;
 }
 
 h1{
@@ -69,34 +70,34 @@ img{
 /* project info */
 .project-info section{
     position: fixed;
-    width: 20%;
+    width: 30%;
     border: 1px solid #000;
+    background-color: white;
 }
 .project-info p{
     padding: 0em 1.5em;
 }
 
 .echo-info{
-    top: 7%;
-    right: 4%;
+    top: 5%;
+    right: 5%;
     display: none;
 }
 .project-info img{
     position: relative;
     z-index: -1;
     border-top: 1px solid #000;
-
 }
 
 .weather-info{
     top: 10%;
-    left: 10%;
+    right: 10%;
     display: none;
 }
 
 .workday-info{
-    top: 50%;
-    left: 15%;
+    top: 15%;
+    right: 15%;
     display: none;
 }
 
@@ -218,23 +219,31 @@ p{
 
 
 
-
-
-
-
-
-
-
-@media only screen and (max-width: 500px)
+@media only screen and (max-width: 768px)
 {
-    .info{width: 70%;}
-
-    ul{
-        margin-bottom: 0;
-        padding-bottom: 0;
-        border-bottom: 1px solid #000;
+    h1{
+        font-size: 36pt;
+        line-height: 44pt;
+    }
+    .project-info section{
+        width: 50%;
+        z-index: -1;
+    }
+    main{
+    justify-content: flex-start;
+    align-items: flex-end;
     }
 
+}
+@media only screen and (max-width: 500px)
+{
+    .project-info section{
+        width: 70%;
+    }
+    h1{
+        font-size: 30pt;
+        line-height: 38pt;
+    }
 }
 
 
