@@ -19,7 +19,7 @@ const codequizInfo = $('.codequiz-info');
 const echoClose = $('.echo-close');
 const weatherClose = $('.weather-close');
 const workdayClose = $('.workday-close');
-const codeQuizClose = $('.codequiz-close');
+const codequizClose = $('.codequiz-close');
 
 
 console.log(echoClose);
