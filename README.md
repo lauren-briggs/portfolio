@@ -2,6 +2,12 @@
 
 Updated portfolio page.
 
+
+### ⭐ DEPLOYED SITE
+
+[Click here](https://lauren-briggs.github.io/portfolio/).
+
+![Screenshot of deployed site](assets/images/portfolio.png)
 ## Requirements
 
 * Submit an updated portfolio featuring Project 1 and two exemplary homework assignments.
@@ -34,11 +40,6 @@ Your updated portfolio should:
 
 5. Have a polished, mobile-responsive user interface.
 
-### ⭐ DEPLOYED SITE
-
-[Click here](https://lauren-briggs.github.io/portfolio/).
-
-![Screenshot of deployed site](assets/images/portfolio.png)
 
 # portfolio -- WEEK 02
 Portfolio, week two homework
