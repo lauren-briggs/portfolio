@@ -90,20 +90,26 @@ img{
 }
 
 .weather-info{
-    top: 10%;
-    right: 10%;
+    top: 9%;
+    right: 9%;
     display: none;
 }
 
 .workday-info{
-    top: 15%;
-    right: 15%;
+    top: 13%;
+    right: 13%;
     display: none;
 }
 
 .codequiz-info{
-    top: 20%;
-    right: 20%;
+    top: 17%;
+    right: 17%;
+    display: none;
+}
+
+.budget-info{
+    top: 21%;
+    right: 21%;
     display: none;
 }
 
