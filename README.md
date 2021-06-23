@@ -7,7 +7,7 @@ Updated portfolio page.
 
 [Click here](https://lauren-briggs.github.io/portfolio/).
 
-![Screenshot of deployed site](assets/images/portfolio.png)
+![Screenshot of deployed site](assets/images/portfolio-updated.png)
 ## Requirements
 
 * Submit an updated portfolio featuring Project 1 and two exemplary homework assignments.
